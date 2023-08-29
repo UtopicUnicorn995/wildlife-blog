@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-size: 40px;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+header nav ul{
+    list-style-type: none;
+    display: flex;
+    column-gap: 20px;
+}
+
+#keyVisual{
+    background-image: url(/assets/david-griffiths-iYGE0T3fYas-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    position: relative;
+    padding-left: 40px;
+    padding-top: 40px;
+}
+
+#keyVisual .elephant-img{
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    width: 650px;
+    animation: walking 10s linear infinite;
+}
+
+.quote-container{
+    font-size: 36px;
+    max-width: 800px;
+}
+
+@keyframes walking {
+    100%{
+        right: 140px;
+    }
+}
